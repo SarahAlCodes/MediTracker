@@ -1,36 +1,33 @@
 <%- include('partials/header') -%>
-<div class="container profile">
+<main class="container profile">
   <div class="h-100 d-flex align-items-center justify-content-center">
       <div class="col-6">
-          <div>
-              <h1 class="h1-profile">Welcome Back <%= user.userName%> !</h1>
+          <div class="heading-profile">
+              <h1 class="h1-profile">Welcome Back <%= user.userName%>!</h1>
               <p><strong>Email</strong>: <%= user.email %></p>
           </div>
           <div class="mt-1">
-            <h4 class="upload-card-h4">Upload Driver's License</h4>
+            <h4 class="upload-card">Upload Driver's License</h4>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
-                <!-- <label for="imgUpload" class="form-label">Image</label> -->
                 <input type="file" class="form-control" id="imageUpload" name="file">
               </div>
               <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
             </form>
           </div>
           <div class="mt-1">
-            <h4 class="upload-card-h4">Upload Primary Insurance</h4>
+            <h4 class="upload-card">Upload Primary Insurance</h4>
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
-                <!-- <label for="imgUpload" class="form-label">Image</label> -->
                 <input type="file" class="form-control" id="imageUpload" name="file">
               </div>
               <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
             </form>
           </div>
           <div class="mt-1">
-          <h4 class="upload-card-h4">Upload Secondary Insurance</h4>
+          <h4 class="upload-card">Upload Secondary Insurance</h4>
           <form action="/post/createPost" enctype="multipart/form-data" method="POST">
             <div class="mb-3">
-              <!-- <label for="imgUpload" class="form-label">Image</label> -->
               <input type="file" class="form-control" id="imageUpload" name="file">
             </div>
             <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
@@ -54,5 +51,5 @@
       <!-- </div>   -->
     </div>
   </div>
-</div>
+</main>
 <%- include('partials/footer') -%>

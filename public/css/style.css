@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Index Page */
 body{
     background-image: url('https://img.freepik.com/free-vector/clean-medical-background_53876-97927.jpg?w=826&t=st=1664763449~exp=1664764049~hmac=a7cb151d0cd7031c2c0f5baf69411e4cb33414fab8ec8d2641df39a41604eba5');
     -webkit-background-size: cover;
@@ -12,36 +11,134 @@ body{
     -o-background-size: cover;
     background-size: cover;
     background-repeat: repeat-y;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-h1{
-    color: rgb(78, 78, 79);
-    padding-bottom: 20px;
-    text-transform: capitalize;
-} 
-
-.landing{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main{
     height:95vh;
     width:80vw;
     margin:auto;
+    /* margin-bottom: .5em; */
 }
 
-.button{
-    background: rgba(48, 44, 44, .3);
-    border: 2px;
-    border-radius: 5px;
-    padding: 3px 12px;
-    margin: 5px;    
+
+
+
+/* Index Page */
+
+.landing { 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.index-h1 {
+    letter-spacing: 12px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(19, 15, 15);
+    padding: 1px;
+}
+
+.index-button {
+    font-size: 1em;
+    font-weight: 500;
+    background: #88b9b3;
+    color: rgb(22, 14, 14);
+    padding: 7px 10px;
+    margin: 5px;  
+    border: 4px;
+    border-radius: 8px;
+}
+
+.index-button:hover {
+    cursor: pointer;
+    letter-spacing: 4px;
+    opacity: 0.75;
+}
+
+
+.index-p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-style: italic;
+    padding: 1em; 
+}
+
+
+
+/* Login Page */
+
+.signin-button {
+    padding: 13em;
+}
+
+.btn-primary {
+    font-size: 1em;
+    font-weight: 500;
+    background: #88b9b3;
+    color: rgb(22, 14, 14);
+    padding: 7px 10px;
+    margin: 5px;  
+    border: 4px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    letter-spacing: 4px;
+    opacity: 0.60;
+}
+
+
+
+
+/* Signup Page */
+
+.signup-button {
+    padding: 7em;
+}
+
+
+
+
+/* Profile Page */
+
+.profile {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h1-profile {
+    padding-top: 2em;
+}
+
+.upload-card{
+    margin-top: 0.5em;
+}
+
+.insurance-cards {
+    display: flex;
+    flex-flow: column;
+    max-width: 95%;
+}
+
+
+
+
+/* Feed Page - NEED TO FIX SIZE OF CARDS */
+
+.cards{
+    margin: auto;
+    padding-top: 1em;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
 
 .landing > form > input ,  #submitButton, .landing > form > input:active, .form, .button{
     height: 35px;
@@ -55,34 +152,13 @@ main{
     color: white;
   }
 
-#submitButton{
-    margin-top: 1rem;
-    color: #888;
-}
+
 .landing > form {
     display: flex;
     flex-direction: column;
 }
-.index-button{
-  width: 10em;
-}
-.index-h1{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 8px;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 800;
-    font-size: 3em;
-    color: rgb(38, 38, 38);
-    padding: 1px;
-    text-transform: capitalize;
-}
-.index-p{
-    font-size: 1em;
-    text-transform: capitalize;
-    padding: 1em;
-    font-style: italic;
-}
+
+
 .logout-button{
     font-size: 1em;
     font-family: 'Oswald', sans-serif;
@@ -102,39 +178,7 @@ main{
     opacity: 0.55;
 }
 
-/* Sign-In Page */
 
-.signin-button {
-    padding: 13em;
-}
-.signup-button {
-    padding: 7em;
-}
-
-/* Profile Page */
-
-.h1-profile {
-    padding-top: 2em;
-}
-
-.insurance-cards {
-    margin-top: 1em;
-    margin-bottom: 3em;
-    display: flex;
-    flex-flow: column;
-    /* align-items: center; */
-}
-
-.upload-card-h4 {
-    margin-top: 0.5em;
-}
-
-/* Feed Page */
-
-.card-feed {
-    margin-top: 2em;
-    padding-top: 1em;
-}
 
 /* Post Page */
 
@@ -265,37 +309,14 @@ hr {
 }
 
 
-/* .button{
-    background: rgba(48, 44, 44, .3);
-    border: 2px;
-    border-radius: 5px;
-    padding: 3px 12px;
-    margin: 5px;    
-} */
-
-
-.landing > form > input ,  #submitButton, .landing > form > input:active, .form, .button{
-    height: 35px;
-    margin: 3px;
-    background-color: rgb(78, 78, 79);
-    border-radius: 5px;
-    text-align: center;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: white;
-  }
 
 #todo-form{
     font-size: 15px;
     padding: 10px 15px;
     width: 100%;
 }
-  
-#submitButton{
-    margin-top: 1rem;
-    color: #888;
-}
+
+
 
 .landing > form {
     display: flex;
