@@ -19,8 +19,13 @@ main{
     width:80vw;
     margin:auto;
     /* margin-bottom: .5em; */
-}
+}  
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 
 
@@ -43,6 +48,7 @@ main{
 }
 
 .index-button {
+    width: 12em;
     font-size: 1em;
     font-weight: 500;
     background: #88b9b3;
@@ -77,6 +83,7 @@ main{
 }
 
 .btn-primary {
+    width: 10em;
     font-size: 1em;
     font-weight: 500;
     background: #88b9b3;
@@ -95,13 +102,11 @@ main{
 
 
 
-
 /* Signup Page */
 
 .signup-button {
     padding: 7em;
 }
-
 
 
 
@@ -120,6 +125,8 @@ main{
 }
 
 .insurance-cards {
+    margin-top: 1.5em;
+    width: 30em;
     display: flex;
     flex-flow: column;
     max-width: 95%;
@@ -127,8 +134,14 @@ main{
 
 
 
-
 /* Feed Page - NEED TO FIX SIZE OF CARDS */
+
+.h1-feed {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+    font-size: 2em;
+    font-weight: 500;
+}
 
 .cards{
     margin: auto;
@@ -138,20 +151,21 @@ main{
 }
 
 
+/* Post Page */
+
+.post {
+    height:95vh;
+    width:80vw;
+    margin:auto;
+}
 
 
-.landing > form > input ,  #submitButton, .landing > form > input:active, .form, .button{
-    height: 35px;
-    margin: 3px;
-    background-color: rgb(78, 78, 79);
-    border-radius: 5px;
-    text-align: center;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    color: white;
-  }
+/* Todos Page */
 
+.h1-todos {
+    font-size: 2em;
+    font-family: 'Oswald';
+}
 
 .landing > form {
     display: flex;
@@ -159,52 +173,21 @@ main{
 }
 
 
-.logout-button{
-    font-size: 1em;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 3px;
-    padding: 0.5em;
-    position: relative;
-    margin: 1rem;
-    float: right;
-    overflow: hidden;
-    background: rgb(214, 214, 214);
-    color: rgb(47, 47, 47);
-    border-radius: 10%;
-}
-.logout-button:hover {
-    opacity: 0.55;
-}
-
-
-
-/* Post Page */
-
-.card-post {
-    padding-top: 1em;
-}
-
-.fa-trash {
-    padding-top: 1em;
-}
-
-/* Todos Page */
-
-.completed{
-    text-decoration: line-through;
-    color: gray;
+.landing > form > input ,  #submitButton, .landing > form > input:active, .form, .button{
+    height: 30px;
+    margin: 4px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
     cursor: pointer;
-}
+    color: grey;
+  }
 
-.not{
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .todo-container{
-    color: rgb(45, 45, 45);
+    color: rgb(26, 26, 26);
     position: absolute;
     top: 45%;
     left: 50%;
@@ -212,14 +195,12 @@ main{
     min-width: 50vw;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background-color: rgba(192, 192, 192, 0.694);
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    font-size: large;
-    margin-top: 5em;
+    /* font-size: large; */
+    margin-top: 4em;
 }
 
 .addItems{
@@ -227,32 +208,11 @@ main{
     padding: 5px;
     border-radius: 5px;
     width: 100%;
-    background-color: rgb(146, 146, 146);
+    /* background-color: rgb(4, 4, 4); */
     color: black;
     cursor: pointer;
 }
 
-/* form{
-    display: flex;
-    justify-content: space-around;
-} */
-
-.todo-list-item {
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px grey solid;
-    border-radius: 5px;
-    background-color: rgba(113, 113, 113, 0.3);
-    width:70%;  
-}
-
-.date{
-  width:20em;
-}
-
-li span{
-    padding-right: 10px;
-}
 
 hr {
     border: none;
@@ -260,46 +220,45 @@ hr {
 
 .del{
     padding-left: 10px;
-    color: rgba(165, 42, 42, 0.71);
+    color: black;
+    font-size: larger;
 }
 
 .fas{
     font-size: large;
     text-decoration: none;
     padding: 0;
+    cursor: pointer;
 }
 
 .remaining-items{
     padding: 10px;
     font-weight: 700;
-    color: rgba(165, 42, 42, 0.71);
+    color: #5EADA5;
 }
 
- /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 80%;
+    overflow: auto; 
+    background-color: rgba(70, 70, 70, 0.882); 
 }
   
-/* Modal Content/Box */
 .modal-content, .addItems>form{
     display:flex;
     align-items: stretch;
     justify-content: center;
     flex-direction: column;
-    background-color: #d9d9d9;
-    margin: 15% auto; /* 15% from the top and centered */
+    background-color:#5eada5b6;
+    margin: 15% auto; 
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
 }
 
 .modal-content > h2{
@@ -308,20 +267,6 @@ hr {
     align-self: center;
 }
 
-
-
-#todo-form{
-    font-size: 15px;
-    padding: 10px 15px;
-    width: 100%;
-}
-
-
-
-.landing > form {
-    display: flex;
-    flex-direction: column;
-}
 
 .addItems > form {
   width: 100%;
@@ -332,15 +277,11 @@ td{
   padding: .5em 2em;
 }
 
+
 td+td+td {
   padding: .5em .5em;
 }
 
-.index-button{
-  width: 10em;
+th{
+    padding: .5em 2em;
 }
-
-.fas {
-  cursor: pointer;
-}
- 

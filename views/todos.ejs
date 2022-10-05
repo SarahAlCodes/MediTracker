@@ -1,7 +1,7 @@
 <%- include('partials/header') -%>
     <main class="container">
         <section class="todo-container">
-        <h2><b>Hi <%= user.userName %>,</b> <br>Add upcoming appointments here:</br> </h2>
+        <h2 class="h1-todos"><b>Hi <%= user.userName %>,</b> <br>Add upcoming appointments here:</br> </h2>
         <section class="addItems">
             <form action="/todos/createTodo" method='POST' >
                 <label>Appointment Date:</label>
@@ -44,11 +44,10 @@
                     <span class='del fas fa-times' data-id="<%=el._id%>"></span>
                 </td>
             </tr>
-        <% })} %>
+            <% })} %>
 
-        </table>
-        <ul>
-        <h3 class="remaining-items">Upcoming Appointments: <span><%= left %></span></h2>
+       </table>
+        <h3 class="remaining-items">You have <span><%= left %></span> appointments.</h2>
     </main>
 
 <%- include('partials/footer') -%>
