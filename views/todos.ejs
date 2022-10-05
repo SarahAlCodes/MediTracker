@@ -1,24 +1,54 @@
 <%- include('partials/header') -%>
+    <main class="container">
+        <section class="todo-container">
+        <h2><b>Hi <%= user.userName %>,</b> <br>Add upcoming appointments here:</br> </h2>
+        <section class="addItems">
+            <form action="/todos/createTodo" method='POST' >
+                <label>Appointment Date:</label>
+                <input type="date" name="todoDate" min="2022-07-31" max="2025-12-31" class="form">
+                <label>Dr's Name:</label>
+                <input type="text" placeholder="Dr.Bob Bobster" name='todoItem' class="form">
+                <input type="submit" id="submitButton" value="Add Appointment"> 
+            </form>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                        <h2>Edit Appointment</h2>
+                        <input type="textarea"  placeholder="pretest" class="form" id="todoItemModal">
+                        <input type="date" value=""  min="2022-07-31" max="2025-12-31" class="form" id="todoDateModal">
+                        <button class="form" id="updateButton">Update</button>
+                </div>
+            </div>
+        </section>
+        <% if(todos.length === 0){ %> 
+            <h4 class="remaining-items">You have no upcoming medical visits.</h4> 
+            <% } else { %>
+        <table>
+            <tr>
+                <th>Doctor</th>
+                <th>Date</th>
 
-    <h1>Todos</h1>
-    <ul>
-    <% todos.forEach( el => { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span class='del'> Delete </span>
-            </li>
-    <% }) %>    
-    </ul>
+            </tr>
 
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+            <% todos.forEach( el => { %>
+            <tr>
+                <td class='todoItem todo-list-item' data-id='<%=el._id%>'>
+                    <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                </td>
+                <td>
+                    <span class='date <%= el.completed === true ? 'completed' : 'not'%>' ><%= el.date%></span>
+                </td>
+                <td>
+                    <span class="edit fas fa-edit" data-id="<%=el._id%>" data-todo="<%= el.todo %>" data-date="<%= el.date%>"></span>
+                </td>
+                <td>
+                    <span class='del fas fa-times' data-id="<%=el._id%>"></span>
+                </td>
+            </tr>
+        <% })} %>
 
-    <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-        <input type="submit">
-    </form>
-
-    <a href="/logout">Logout</a>
-
-    <script src="js/main.js"></script>
+        </table>
+        <ul>
+        <h3 class="remaining-items">Upcoming Appointments: <span><%= left %></span></h2>
+    </main>
 
 <%- include('partials/footer') -%>
