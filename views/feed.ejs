@@ -1,22 +1,23 @@
 <%- include('partials/header') -%>
 
-<main class="container">
-  <div class="h-100 d-flex align-items-center justify-content-center">
-    <% if(posts.length === 0){ %> 
-    <h1>Add your Insurance Cards <a href="/profile">here</a></h1>
-    <% } else { %>
-      <ul class="column list-unstyled">
-        <h1 class="h1-feed">Driver's License and Insurance Cards</h1>
-        <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-4 justify-content-center mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="cards" src="<%= posts[i].image%>">
-            </a>
-          </li>
-        <% } %>
-      </ul>
-    <% } %>
-  </div>
-</main>
+  <main class="container feed">
+    <div class="row justify-content-center mt-5">
+      <% if(posts.length === 0){ %> 
+      <h1>Add your Insurance Cards <a href="/profile">here</a></h1>
+      <% } else { %>
+        <ul class="column list-unstyled">
+          <h1 class="h1-feed">Driver's License and Insurance Cards</h1>
+          <% for(var i=0; i<posts.length; i++) {%>
+            <li class="col-4 justify-content-center mt-5">
+              <a href="/post/<%= posts[i]._id%>">
+                <img class="cards" src="<%= posts[i].image%>">
+              </a>
+            </li>
+          <% } %>
+        </ul>
+      <% } %>
+    </div>
+  </main>
 
 <%- include('partials/footer') -%>
+
