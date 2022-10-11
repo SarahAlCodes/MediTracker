@@ -1,6 +1,7 @@
 const passport = require("passport");
 const validator = require("validator");
 const User = require("../models/User");
+const Post = require("../models/Post");
 
 exports.getLogin = (req, res) => {
   if (req.user) {
@@ -8,6 +9,7 @@ exports.getLogin = (req, res) => {
   }
   res.render("login", {
     title: "Login",
+    user: req.user
   });
 };
 
@@ -62,6 +64,7 @@ exports.getSignup = (req, res) => {
   }
   res.render("signup", {
     title: "Create Account",
+    user: req.user
   });
 };
 
@@ -116,3 +119,14 @@ exports.postSignup = (req, res, next) => {
     }
   );
 };
+
+
+// exports.getFeed = async (req, res) => {
+//   if (req.user) {
+//     const posts = await Post.find().sort({ createdAt: "desc" }).lean();
+//     return res.render("feed.ejs", { posts: posts });
+//   } 
+//   res.render('signup', {
+//     title: 'Create Account'
+//   })
+// }

@@ -42,10 +42,11 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2"
                             id="navbarSupportedContent">
-                            <ul class="navbar-nav align-items-center">
-                                <li class="nav-item active">
+                            <ul class="navbar-nav ml-auto">
+                            <% if (!user) { %>
+                                <li class="nav-item">
                                     <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
@@ -58,10 +59,33 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/profile">Profile</a>
                                 </li>
-                            </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/signup"><b>Signup</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/login"><b>Signin</b></a>
+                                </li>
+                            <% } else { %>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/todos">Appointments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/feed">Insurance</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/profile">Profile</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout"><b>Logout</b></a>
+                                </li>
+                            <% } %> 
                         </div>
-                        <a class="btn_2 d-none d-lg-block" href="/login">Login</a>
-                        <a class="btn_2 d-none d-lg-block" href="/logout">Logout</a>
+                        
                     </nav>
                 </div>
             </div>
