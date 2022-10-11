@@ -1,5 +1,5 @@
 # MediTracker
-Have you ever forgotten what day you scheduled your doctor appointment for? Or to bring in your insurance cards to a doctor's office? MediTracker helps users track all their appointments, physicians and insurance information in one application.
+Have you ever forgotten what day you scheduled your doctor’s appointment? Or to bring in your driver's license and insurance cards to a doctor's office? MediTracker helps users track all their appointments, physicians, and insurance information in one application. Keeping track of your medical care can be overwhelming, but MediTracker will organize that for you. 
 
 ## How It's Made:
 
