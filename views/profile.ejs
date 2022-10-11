@@ -1,55 +1,56 @@
 <%- include('partials/header') -%>
-  <main class="container profile">
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="col-6">
-            <div class="heading-profile">
-                <h1 class="h1-profile">Welcome <%= user.userName%>!</h1>
-                <p><strong>Email</strong>: <%= user.email %></p>
-            </div>
-            <div class="mt-1">
-              <h5 class="upload-card">Upload Driver's License</h5>
-              <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-                <div class="mb-3">
-                  <input type="file" class="form-control" id="imageUpload" name="file">
+  <body class="background">
+     <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card border-0 shadow rounded-3 my-5">
+            <div class="card-body p-4 p-sm-5">
+              <h5 class="card-title text-center mb-5 fw-light fs-5">Upload Cards</h5>
+                <div class="form-floating mb-3 signup">
+                  <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Driver's License</label>
+                      <input type="file" class="form-control" id="imageUpload" name="file">
+                    </div>
+                    <button type="submit" class="profile-btn btn-primary" value="Upload">Submit</button>
+                  </form>
                 </div>
-                <button type="submit" class="profile-btn btn-primary" value="Upload">Submit</button>
+                <div class="form-floating mb-3 signup">
+                  <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Primary Insurance</label>
+                      <input type="file" class="form-control" id="imageUpload" name="file">
+                    </div>
+                    <button type="submit" class="profile-btn btn-primary" value="Upload">Submit</button>
+                  </form>
+                </div>
+                <div class="form-floating mb-3 signup">
+                  <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Secondary Insurance</label>
+                      <input type="file" class="form-control" id="imageUpload" name="file">
+                    </div>
+                    <button type="submit" class="profile-btn btn-primary" value="Upload">Submit</button>
+                  </form>
+                </div>
+                <div class="form-floating mb-3 signup">
+                  <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Proof of Vaccination</label>
+                      <input type="file" class="form-control" id="imageUpload" name="file">
+                    </div>
+                    <button type="submit" class="profile-btn btn-primary" value="Upload">Submit</button>
+                  </form>
+                </div>
+                <div class="d-grid">
+                  <a class="btn btn-primary btn-login text-uppercase fw-bold" href="/feed">View Cards</a>
+                </div>
               </form>
             </div>
-            <div class="mt-1">
-              <h5 class="upload-card">Upload Primary Insurance</h5>
-              <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-                <div class="mb-3">
-                  <input type="file" class="form-control" id="imageUpload" name="file">
-                </div>
-                <button type="submit" class="profile-btn btn-primary" value="Upload">Submit</button>
-              </form>
-            </div>
-            <div class="mt-1">
-            <h5 class="upload-card">Upload Secondary Insurance</h5>
-            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-              <div class="mb-3">
-                <input type="file" class="form-control" id="imageUpload" name="file">
-              </div>
-              <button type="submit" class="profile-btn btn-primary" value="Upload">Submit</button>
-            </form>
-            <div class="mt-1">
-                <a class="insurance-cards btn btn-primary" href="/feed">View Insurance Cards</a>
-            </div>
-          </div>
           </div>
         </div>
-        <!-- <div class="col-6"> -->
-          <!-- <ul class="row list-unstyled">
-          <% for(var i=0; i<posts.length; i++) {%>
-            <li class="col-6 justify-content-between mt-5">
-              <a href="/post/<%= posts[i]._id%>">
-                <img class="img-fluid" src="<%= posts[i].image%>">
-              </a>
-            </li>
-          <% } %>
-          </ul> --> 
-        <!-- </div>   -->
       </div>
     </div>
-  </main>
+  </body>
+  
+    
 <%- include('partials/footer') -%>
