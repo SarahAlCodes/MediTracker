@@ -1,5 +1,5 @@
 # MediTracker
-Have you ever fogotten the name of the physician you saw a few months ago, but your primary care physician is asking for their medical records? MediTracker helps users track all their appointments and physicians in one application. Users can add upcoming doctor appointments with the name, date, location and specialty to keep track of all their medical visits. 
+Have you ever forgotten what day you scheduled your doctor appointment for? Or to bring in your insurance cards to a doctor's office? MediTracker helps users track all their appointments, physicians and insurance information in one application.
 
 ## How It's Made:
 
