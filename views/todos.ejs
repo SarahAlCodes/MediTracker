@@ -2,7 +2,7 @@
 <body class="background">
     <main class="container todo">
         <section class="todo-container">
-        <h2 class="h1-todos"><b>Hi <%= user.userName %>,</b> <br>Add Upcoming Appointments Here:</br> </h2>
+        <h2 class="h1-todos"><b>Hi <%= user.userName.replace(/\w/, c => c.toUpperCase()) %>,</b> <br>Add upcoming appointments here:</br> </h2>
         <section class="addItems">
             <form action="/todos/createTodo" method='POST' >
                 <label>Appointment Date:</label>
@@ -25,7 +25,7 @@
             </div>
         </section>
         <% if(todos.length === 0){ %> 
-            <h4 class="remaining-items">You have no upcoming medical visits.</h4> 
+            <h4 class="remaining-items1">You have no upcoming medical visits.</h4> 
             <% } else { %>
         <table class="table">
             <thead>
@@ -55,7 +55,7 @@
                 <% })} %>
             </tbody>
         </table>
-        <h3 class="remaining-items">You have <span><%= left %></span> appointments.</h2>
+        <h3 class="remaining-items2">You have <span><%= left %></span> appointments.</h2>
     </main>
 </body>
 <%- include('partials/footer') -%>
