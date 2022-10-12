@@ -1044,6 +1044,7 @@ ul {
   border: none;
   font-size: 1em;
   color: grey;
+  min-width: 100%;
 }
 
 
