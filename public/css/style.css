@@ -1075,6 +1075,10 @@ ul {
   padding-bottom: 0;
 }
 
+.todoDate {
+  width: fit-content;
+  /* min-width: 80%; */
+}
 
 hr {
   border: none;
