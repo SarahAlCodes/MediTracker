@@ -685,7 +685,7 @@ ul {
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us {
-    padding: 70px 0 0;
+    /* padding: 70px 0 0; */
     background-image: none;
   }
 }
@@ -707,7 +707,7 @@ ul {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 16, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us .about_us_text {
-    padding: 0 2em 0 2em;
+    padding: 16em 2em 0 2em;
   }
 }
 
@@ -729,10 +729,10 @@ ul {
 @media (max-width: 991px) {
   /* line 33, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us .about_us_text h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 14px;
     line-height: 35px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
   }
 }
 
@@ -1004,7 +1004,7 @@ ul {
 .h1-todos {
   font-size: 1.8em;
   font-family: 'Oswald';
-  margin-top: 12em;
+  margin-top: 7em;
   min-width: 100%;
 }
 
@@ -1044,6 +1044,7 @@ ul {
   border: none;
   font-size: 1em;
   color: grey;
+  min-width: 100%;
 }
 
 
@@ -1113,7 +1114,7 @@ hr {
   width: 100%; 
   height: 30%;
   overflow: auto; 
-  background-color: #3a3a3aca; 
+  background-color: #6b6b6bed; 
 }
 
 
@@ -1122,7 +1123,7 @@ hr {
   align-items: stretch;
   justify-content: center;
   flex-direction: column;
-  background-color: #bfccd869;
+  background-color: #bfccd8a9;
   margin: 15% auto; 
   padding: 20px;
   width: 80%;
@@ -1141,7 +1142,7 @@ hr {
 
 .table{
   border: none;
-  background-color: #bfccd869;
+  background-color: #d0dfec4d;
 }
 
 td{
