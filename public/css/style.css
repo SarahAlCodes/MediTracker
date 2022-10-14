@@ -432,7 +432,7 @@ ul {
   height: 935px;
   position: relative;
   overflow: hidden;
-  background-image: url(../img/banner_bg.png);
+  /* background-image: url(../img/banner_bg.png); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -460,21 +460,17 @@ ul {
 .banner_part .banner_text {
   display: table;
   width: 100%;
-  height: 935px;
+  height: 635px;
 }
 
 /* line 26, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
 .banner_part .banner_text .banner_text_iner {
   display: table-cell;
   vertical-align: middle;
-  /* padding-top: 155px; */
 }
 
 
-
 .banner_text_iner h5 {
-  padding-top: 0;
-  margin-top: 0;
   padding-bottom: 0.8em;
 }
 
@@ -490,7 +486,7 @@ ul {
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 26, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part .banner_text .banner_text_iner {
-    padding-top: 2em;
+    /* padding-top: 2em; */
     height: 650px;
   }
 }
@@ -609,7 +605,7 @@ ul {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .banner_part .banner_img {
-    padding-top: 7em;
+    padding-top: 4em;
   }
 }
 
@@ -619,6 +615,7 @@ ul {
     padding-left: 2em;
     /* text-align: justify; */
   }
+  
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -691,8 +688,9 @@ ul {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 16, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us .about_us_text {
-    padding: 16em 2em 0 2em;
+    padding: 16em 0 0 2em;
   }
+  
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -732,7 +730,7 @@ ul {
 /* line 53, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
 .about_us .about_us_text p {
   line-height: 1.929;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 @media (max-width: 576px) {
@@ -954,6 +952,8 @@ ul {
 
 
 .background {
+  padding-top: 5em;
+  height: 100%;
   background-color: #DDEDFA;
 }
 
