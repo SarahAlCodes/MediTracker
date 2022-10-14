@@ -133,29 +133,7 @@ ul {
 /* Main Button Area css
 ============================================================================================ */
 /* line 3, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_button.scss */
-.submit_btn {
-  width: auto;
-  display: inline-block;
-  background: #fff;
-  padding: 0px 50px;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 50px;
-  border-radius: 5px;
-  outline: none !important;
-  box-shadow: none !important;
-  text-align: center;
-  border: 1px solid #edeff2;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
 
-/* line 20, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_button.scss */
-.submit_btn:hover {
-  background: transparent;
-}
 
 /* line 26, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_button.scss */
 .btn_1 {
@@ -458,6 +436,7 @@ ul {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+  padding-left: 2em;
 }
 
 
@@ -465,7 +444,7 @@ ul {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part {
     background-image: none;
-    background-color: #f7f7f7;
+    background-color: #DDEDFA;
     height: 650px;
   }
 }
@@ -491,22 +470,27 @@ ul {
   /* padding-top: 155px; */
 }
 
+
+
 .banner_text_iner h5 {
+  padding-top: 0;
+  margin-top: 0;
   padding-bottom: 0.8em;
 }
+
 
 @media (max-width: 991px) {
   /* line 26, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part .banner_text .banner_text_iner {
     vertical-align: middle;
-    padding-top: 0;
+    /* padding-top: 1em; */
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 26, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part .banner_text .banner_text_iner {
-    padding-top: 4em;
+    padding-top: 2em;
     height: 650px;
   }
 }
@@ -620,12 +604,12 @@ ul {
 }
 
 .banner_part .banner_img {
-  padding-left: 5em;
+  padding-left: 8em;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .banner_part .banner_img {
-    padding-top: 5em;
+    padding-top: 7em;
   }
 }
 
@@ -672,7 +656,7 @@ ul {
 /************Team css start***************/
 /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
 .about_us {
-  padding-top: 2em;
+  padding-top: 5em;
   padding-bottom: 5em;
   position: relative;
   z-index: 99;
@@ -970,8 +954,7 @@ ul {
 
 
 .background {
-  margin-top: 8em;
-  background-color: #ddedfa;
+  background-color: #DDEDFA;
 }
 
 
@@ -1181,6 +1164,29 @@ th{
   margin-top: 5em;
 }
 
+/* Insurance Card Post */
+
+.insurance-card {
+  margin-top: 5em;
+}
+
+.insurance-btn {
+  width: auto;
+  background: #0070fa;
+  padding: 8px 10px;
+  margin-top: 1em;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #0070fa;
+  cursor: pointer;
+
+}
+
+.insurance-btn:hover {
+  letter-spacing: 2px;
+}
+
 /* Footer */
 
 footer {
@@ -1190,3 +1196,6 @@ footer {
   width: 100%;
   font-size: medium;
 }
+
+
+

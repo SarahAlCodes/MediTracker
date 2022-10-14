@@ -1,6 +1,5 @@
 <%- include('partials/header') -%>
 
-<body class="background">
     <% if (locals.messages.errors) { %>
     <% messages.errors.forEach( el => { %>
         <div class="alert alert-danger"><%= el.msg %></div>
@@ -42,7 +41,6 @@
       </div>
     </div>
   </div>
-</body>
 
 <%- include('partials/footer') -%>
 

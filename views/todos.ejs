@@ -1,5 +1,5 @@
 <%- include('partials/header') -%>
-<body class="background">
+
     <main class="container todo">
         <section class="todo-container">
         <h2 class="h1-todos"><b>Hi <%= user.userName.replace(/\w/, c => c.toUpperCase()) %>,</b> <br>Add upcoming appointments here:</br> </h2>
@@ -57,5 +57,5 @@
         </table>
         <h3 class="remaining-items2">You have <span><%= left %></span> appointments.</h2>
     </main>
-</body>
+
 <%- include('partials/footer') -%>
