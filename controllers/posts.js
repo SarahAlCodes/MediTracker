@@ -52,7 +52,7 @@ module.exports = {
       console.log("Deleted Post");
       res.redirect("/feed");
     } catch (err) {
-      res.redirect("/feed");
+      res.redirect("/profile");
     }
   },
 };
