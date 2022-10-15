@@ -1184,13 +1184,17 @@ th{
 }
 
 .insurance-title {
-  margin-top: 5em;
+  margin-top: 2em;
+}
+
+.insurance-title1 {
+  margin-top: 8em;
 }
 
 /* Insurance Card Post */
 
 .insurance-card {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .insurance-btn {

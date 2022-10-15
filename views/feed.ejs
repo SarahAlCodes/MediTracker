@@ -3,10 +3,10 @@
 
   <div class="column insurance">
     <% if(posts.length === 0){ %> 
-      <h1 class="insurance-title text-center fw-light fs-3">Add your Insurance Cards <a href="/profile">here</a></h1>
+      <h1 class="insurance-title1 text-center fw-light fs-3">Add your Insurance Cards <a href="/profile">here</a></h1>
     <% } else { %>
       <h1 class="insurance-title text-center fw-light fs-3">Driver's License and Insurance Card</h1>
-      <ul class="col-sm-5 mx-auto list-unstyled">
+      <ul class="col-lg-6 mx-auto list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="column justify-content-center mt-5">
             <a href="/post/<%= posts[i]._id%>">
