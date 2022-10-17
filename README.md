@@ -16,7 +16,6 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 ## Optimizations
 
   - Enabling notifications for upcoming appointments
-  - Ability for users to upload their insurance cards 
   - Ability for users to upload medical records to each doctor visit
   - Convert website to mobile application
   - Enable Google OAth
